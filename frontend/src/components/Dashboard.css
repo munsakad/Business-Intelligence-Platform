@@ -1,0 +1,104 @@
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.widget {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.widget-title {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.widget-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.widget-title-row .widget-title {
+  margin-bottom: 8px;
+}
+
+.widget-desc {
+  font-size: 11.5px;
+  color: var(--text-faint);
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.widget-kpi {
+  justify-content: center;
+  min-height: 120px;
+}
+
+.widget-kpi-value {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--amber);
+  line-height: 1.1;
+}
+
+.widget-chart {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .widget-chart {
+    grid-column: span 1;
+  }
+}
+
+.widget-chart-body {
+  width: 100%;
+}
+
+.widget-table-scroll {
+  overflow: auto;
+  max-height: 260px;
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+}
+
+.widget-table-scroll table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 11.5px;
+}
+
+.widget-table-scroll th,
+.widget-table-scroll td {
+  text-align: left;
+  padding: 6px 9px;
+  border-bottom: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+
+.widget-table-scroll th {
+  color: var(--text-muted);
+  position: sticky;
+  top: 0;
+  background: var(--panel-raised);
+}
+
+.widget-error {
+  border-color: var(--red-dim);
+}
+
+.widget-error-text {
+  font-size: 12px;
+  color: var(--red);
+}

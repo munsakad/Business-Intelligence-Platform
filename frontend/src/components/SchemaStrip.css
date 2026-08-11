@@ -1,0 +1,74 @@
+.schema-strip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.schema-strip-name {
+  font-size: 12.5px;
+  color: var(--text);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.schema-strip-count {
+  font-size: 10.5px;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.schema-strip-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.schema-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 7px;
+  background: var(--panel-raised);
+  line-height: 1.4;
+}
+
+.schema-chip-name {
+  font-size: 11px;
+  color: var(--text);
+}
+
+.schema-chip-type {
+  font-size: 9.5px;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.schema-chip.color-blue .schema-chip-type {
+  color: var(--blue);
+  background: var(--blue-dim);
+}
+.schema-chip.color-amber .schema-chip-type {
+  color: var(--amber);
+  background: var(--amber-dim);
+}
+.schema-chip.color-green .schema-chip-type {
+  color: var(--green);
+  background: var(--green-dim);
+}
+.schema-chip.color-purple .schema-chip-type {
+  color: var(--purple);
+  background: #2e2647;
+}
+
+.schema-strip.is-compact .schema-strip-chips {
+  gap: 5px;
+}
+.schema-strip.is-compact .schema-chip {
+  padding: 2px 6px;
+}

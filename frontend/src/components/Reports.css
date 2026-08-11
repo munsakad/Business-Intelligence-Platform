@@ -1,0 +1,43 @@
+.report-body {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  max-width: 760px;
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.report-body h2 {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--amber);
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 8px;
+  margin: 24px 0 12px;
+}
+
+.report-body h2:first-child {
+  margin-top: 0;
+}
+
+.report-body p {
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.report-body ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.report-body li {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.report-body strong {
+  color: var(--amber);
+}

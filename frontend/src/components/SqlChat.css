@@ -1,0 +1,130 @@
+.sql-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.chip-btn {
+  background: var(--panel-raised);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 14px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.chip-btn:hover {
+  border-color: var(--amber);
+  color: var(--text);
+}
+
+.sql-history {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.sql-turn {
+  border-left: 2px solid var(--border);
+  padding-left: 14px;
+}
+
+.sql-question {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.sql-question-mark {
+  color: var(--amber);
+}
+
+.sql-code {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: var(--blue);
+  overflow-x: auto;
+  white-space: pre-wrap;
+  margin: 0 0 8px;
+}
+
+.sql-explanation {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.sql-result-scroll {
+  overflow: auto;
+  max-height: 320px;
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+}
+
+.sql-result-scroll table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+
+.sql-result-scroll th,
+.sql-result-scroll td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+
+.sql-result-scroll th {
+  color: var(--text-muted);
+  position: sticky;
+  top: 0;
+  background: var(--panel-raised);
+}
+
+.sql-result-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.sql-row-count {
+  font-size: 10.5px;
+  color: var(--text-faint);
+}
+
+.sql-loading {
+  font-size: 12.5px;
+  color: var(--amber);
+}
+
+.sql-input-row {
+  display: flex;
+  gap: 8px;
+  position: sticky;
+  bottom: 0;
+  background: var(--bg);
+  padding-top: 8px;
+}
+
+.sql-input {
+  flex: 1;
+  background: var(--panel-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  color: var(--text);
+  font-size: 13.5px;
+}
+
+.sql-input:focus {
+  border-color: var(--amber);
+  outline: none;
+}
