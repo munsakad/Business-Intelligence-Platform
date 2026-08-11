@@ -1,0 +1,85 @@
+:root {
+  --bg: #0b1014;
+  --panel: #121a20;
+  --panel-raised: #17212a;
+  --border: #22303a;
+  --border-soft: #1a2831;
+  --text: #e7ecef;
+  --text-muted: #8a9aa5;
+  --text-faint: #56666f;
+  --amber: #e8a33d;
+  --amber-dim: #6b511f;
+  --blue: #5b8def;
+  --blue-dim: #24344f;
+  --green: #4fbf85;
+  --green-dim: #204a34;
+  --red: #e8615f;
+  --red-dim: #4a2323;
+  --purple: #a685e2;
+
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+code,
+pre,
+.mono {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--amber-dim);
+}
+
+a {
+  color: var(--blue);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
