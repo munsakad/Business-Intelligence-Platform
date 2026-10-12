@@ -248,7 +248,8 @@ function pickColumns(meta) {
     (c) => c.type === "text" && c.profile.distinct_count > 1 && c.profile.distinct_count <= 25
   );
   const date = meta.columns.find((c) => c.type === "datetime");
-  const measure = nums.find((c) => /revenue|sales|amount|total|price|value|profit|cost/i.test(c.name)) || nums[0];
+  const preferred = ["revenue", "sales", "amount", "total", "profit", "value", "cost", "price"];
+  const measure = preferred.map((w) => nums.find((c) => c.name.includes(w))).find(Boolean) || nums[0];
   return { nums, cats, date, measure };
 }
 
