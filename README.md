@@ -84,7 +84,7 @@ Open `http://localhost:5173`, upload a CSV, and go.
   This is meant for trusted, single-user local use &mdash; add auth, per-user
   rate limits, and stricter sandboxing before exposing it publicly.
   If it rejects a query, ask the SQL Console a differently-worded question.
-- **Model name.** `backend/.env` defaults to `gemini-3.5-flash`. Google periodically retires
+- **Model name.** `backend/.env` defaults to `gemini-3.8-flash`. Google periodically retires
   older model names for new API keys &mdash; if you see a `404 NOT_FOUND ... no longer
   available to new users` error, list the models your key can actually call and swap
   `GEMINI_MODEL` to one of them (no code changes needed):
